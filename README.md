@@ -14,10 +14,6 @@
 
 本書は次の二つのトピックが一般読者向けである。
 
-{% page-ref page="machine-learning-data-science.md" %}
-
-{% page-ref page="programming-abstract.md" %}
-
 次の二つのトピックは私の趣味の色が濃くなるが、その分、希少価値の高い資料となるよう心がけるつもりである。
 
 そして次の二つは自分用のメモとしての側面が強い。

@@ -5,7 +5,7 @@
 
 ## 機械学習・データサイエンス <a id="mml"></a>
 
-* [機械学習・データサイエンス](machine-learning-data-science.md)
+* [概要](abstract.md)
 * [高校数学からの入門](mathematics-for-high-school-students/README.md)
   * [二次関数](mathematics-for-high-school-students/quadratic-function.md)
   * [確率と統計](mathematics-for-high-school-students/to.md)
@@ -54,7 +54,6 @@
 
 ## プログラミング <a id="programming"></a>
 
-* [プログラミング](programming-abstract.md)
 * [システム概要](system-abstract.md)
 * [OSセットアップ](setup-os.md)
 * [Dockerによる仮想化](virtualize-with-docker.md)

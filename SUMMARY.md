@@ -37,17 +37,20 @@
   * [白色化](data-science/bai-se-hua.md)
   * [低ランク行列近似](data-science/ranku.md)
   * [行列補完](data-science/hang-lie-bu-wan.md)
-* [連続最適化](continuous-optimization.md)
+* [連続最適化](continuous-optimization/README.md)
+  * [Taylor展開と関数近似](continuous-optimization/taylor-series.md)
+  * [最急降下法](continuous-optimization/gradient-descent.md)
+  * [ニュートン法](continuous-optimization/newtons-method.md)
+  * [共役勾配法](continuous-optimization/conjugate-gradient-method.md)
 * [ベイズ的手法](beizu.md)
 
 ## カーネル法
 
 * [概要](kneru/gai-yao.md)
 
-## Riemann最適化 <a id="riemannian-optimization"></a>
+## Riemannian最適化 <a id="riemannian-optimization"></a>
 
-* [線形代数](riemannian-optimization/xian-xing-dai-shu/README.md)
-  * [Untitled](riemannian-optimization/xian-xing-dai-shu/untitled.md)
+* [線形代数](riemannian-optimization/xian-xing-dai-shu.md)
 
 ## プログラミング <a id="programing"></a>
 

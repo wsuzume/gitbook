@@ -2,11 +2,16 @@
 
 * [数学プログラミング置き場](README.md)
 
-## 数学
+## 機械学習・データサイエンス <a id="mml"></a>
 
-* [Untitled](untitled.md)
+* [概要](gai-yao.md)
+* [最小二乗法](untitled.md)
 
-## プログラミング
+## Riemann最適化 <a id="riemannian-optimization"></a>
+
+* [線形代数](riemannian-optimization/xian-xing-dai-shu.md)
+
+## プログラミング <a id="programing"></a>
 
 * [システム概要](shisutemu.md)
 * [OSセットアップ](ossettoappu.md)

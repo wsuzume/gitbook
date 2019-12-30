@@ -44,23 +44,23 @@
   * [共役勾配法](continuous-optimization/conjugate-gradient-method.md)
 * [ベイズ的手法](beizu.md)
 
-## カーネル法
+## カーネル法 <a id="kernel-method"></a>
 
-* [概要](kneru/gai-yao.md)
+* [概要](kernel-method/abstract.md)
 
 ## Riemannian最適化 <a id="riemannian-optimization"></a>
 
-* [線形代数](riemannian-optimization/xian-xing-dai-shu.md)
+* [線形代数](riemannian-optimization/linear-algebra.md)
 
 ## プログラミング <a id="programing"></a>
 
-* [システム概要](shisutemu.md)
-* [OSセットアップ](ossettoappu.md)
-* [Dockerによる仮想化](dockerniyoru.md)
-* [リバースプロキシの設置（nginx）](ribsupurokishinonginx.md)
-* [サーバーサイド（golang/gin）](sbsaidogolanggin.md)
-* [SSL/TLS（Let's Encrypt）](ssl-tls-lets-encrypt.md)
-* [フロントエンド（Elm）](furontoendoelm.md)
+* [システム概要](system-abstract.md)
+* [OSセットアップ](setup-os.md)
+* [Dockerによる仮想化](virtualize-with-docker.md)
+* [リバースプロキシの設置（nginx）](reverse-proxy.md)
+* [サーバーサイド（golang/gin）](server-side.md)
+* [SSL/TLS（Let's Encrypt）](ssl-tls-setting.md)
+* [フロントエンド（Elm）](front-end.md)
 * [DB（MySQL）](db-mysql.md)
 * [KVS（Redis）](kvs-redis.md)
 

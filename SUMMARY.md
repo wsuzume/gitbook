@@ -5,7 +5,7 @@
 
 ## 機械学習・データサイエンス <a id="mml"></a>
 
-* [概要](mml/abstract.md)
+* [機械学習・データサイエンス（概要）](mml/abstract.md)
 * [高校数学からの入門](mml/mathematics-for-high-school-students/README.md)
   * [二次関数](mml/mathematics-for-high-school-students/quadratic-function.md)
   * [確率と統計](mml/mathematics-for-high-school-students/to.md)
@@ -46,29 +46,34 @@
 
 ## カーネル法 <a id="kernel-method"></a>
 
-* [概要](kernel-method/abstract.md)
+* [カーネル法（概要）](kernel-method/abstract.md)
 
 ## Riemannian最適化 <a id="riemannian-optimization"></a>
 
+* [Riemannian最適化（概要）](riemannian-optimization/abstract.md)
 * [線形代数](riemannian-optimization/linear-algebra.md)
 
 ## プログラミング <a id="programming"></a>
 
-* [システム概要](programming/system-abstract.md)
-* [OSセットアップ](programming/setup-os.md)
+* [プログラミング（概要）](programming/system-abstract.md)
+* [システムの構成](programming/system-architecture.md)
+* [サーバーのセットアップ](programming/setup-server/README.md)
+  * [OSセットアップ](programming/setup-server/setup-os.md)
+  * [ドメインの取得と設定（Google domain）](programming/setup-server/domain.md)
 * [Dockerによる仮想化](programming/virtualize-with-docker.md)
 * [サーバーサイド（golang/gin）](programming/server-side.md)
 * [リバースプロキシの設置（nginx）](programming/reverse-proxy.md)
 * [SSL/TLS（Let's Encrypt）](programming/ssl-tls-setting.md)
 * [フロントエンド（Elm）](programming/front-end.md)
+* [Authentication（Firebase）](programming/authentication-firebase.md)
 * [DB（MySQL）](programming/db-mysql.md)
 * [KVS（Redis）](programming/kvs-redis.md)
 
 ## 書籍メモ <a id="book-memo"></a>
 
-* [概要](book-memo/gai-yao.md)
+* [書籍メモ（概要）](book-memo/gai-yao.md)
 
 ## 論文メモ <a id="article-memo"></a>
 
-* [概要](untitled-1.md)
+* [論文メモ（概要）](untitled-1.md)
 

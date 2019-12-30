@@ -17,6 +17,7 @@
   * [統計学](mathematics-for-university-students/tong-ji-xue-chu-deng.md)
   * [情報理論](mathematics-for-university-students/qing-bao-li-lun.md)
 * [機械学習](ji-xie-xue-xi/README.md)
+  * [機械学習をこれから始める人へ](ji-xie-xue-xi/wokorekarameruhe.md)
   * [回帰問題](ji-xie-xue-xi/hui-gui-wen-ti/README.md)
     * [最小二乗法](ji-xie-xue-xi/hui-gui-wen-ti/least-squares.md)
     * [線形回帰](ji-xie-xue-xi/hui-gui-wen-ti/xian-xing-hui-gui.md)
@@ -28,13 +29,16 @@
     * [カーネルSVM](ji-xie-xue-xi/fen-lei-wen-ti/knerusvm.md)
     * [線形判別分析](ji-xie-xue-xi/fen-lei-wen-ti/xian-xing-pan-bie-fen-xi.md)
   * [強化学習](ji-xie-xue-xi/jiang-hua-xue-xi.md)
-  * [ニューラルネットワーク](ji-xie-xue-xi/nyrarunettowku.md)
+  * [ニューラルネットワーク](ji-xie-xue-xi/nyrarunettowku/README.md)
+    * [画像処理](ji-xie-xue-xi/nyrarunettowku/hua-xiang-chu-li.md)
+    * [自然言語処理](ji-xie-xue-xi/nyrarunettowku/zi-ran-yan-yu-chu-li.md)
 * [データサイエンス](dtasaiensu/README.md)
   * [主成分分析](dtasaiensu/zhu-cheng-fen-fen-xi.md)
   * [白色化](dtasaiensu/bai-se-hua.md)
   * [低ランク行列近似](dtasaiensu/ranku.md)
   * [行列補完](dtasaiensu/hang-lie-bu-wan.md)
 * [連続最適化](lian-xu-zui-shi-hua.md)
+* [ベイズ的手法](beizu.md)
 
 ## カーネル法
 

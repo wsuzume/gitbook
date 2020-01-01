@@ -19,7 +19,6 @@
 * [機械学習](mml/machine-learning/README.md)
   * [機械学習をこれから始める人へ](mml/machine-learning/wokorekarameruhe.md)
   * [回帰問題](mml/machine-learning/hui-gui-wen-ti/README.md)
-    * [最小二乗法](mml/machine-learning/hui-gui-wen-ti/least-squares.md)
     * [線形回帰](mml/machine-learning/hui-gui-wen-ti/xian-xing-hui-gui.md)
     * [線形基底関数モデル](mml/machine-learning/hui-gui-wen-ti/moderu.md)
     * [カーネル回帰](mml/machine-learning/hui-gui-wen-ti/kneru-2.md)

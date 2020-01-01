@@ -87,5 +87,6 @@
 
 ## 数学勉強ノート <a id="note"></a>
 
-* [集合](note/set.md)
+* [集合](note/sets.md)
+* [ファジィ集合](note/fuzzy-sets.md)
 

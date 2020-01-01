@@ -40,8 +40,10 @@
 * [連続最適化](mml/continuous-optimization/README.md)
   * [Taylor展開と関数近似](mml/continuous-optimization/taylor-series.md)
   * [最急降下法](mml/continuous-optimization/gradient-descent.md)
+  * [Armijo条件・Wolfe条件](mml/continuous-optimization/armijo-wolfe-condition.md)
   * [ニュートン法](mml/continuous-optimization/newtons-method.md)
   * [共役勾配法](mml/continuous-optimization/conjugate-gradient-method.md)
+  * [準ニュートン法](mml/continuous-optimization/quasi-newton-method.md)
 * [ベイズ的手法](mml/beizu.md)
 
 ## カーネル法 <a id="kernel-method"></a>
@@ -77,11 +79,11 @@
 
 ## 書籍メモ <a id="book-memo"></a>
 
-* [書籍メモ（概要）](book-memo/gai-yao.md)
+* [書籍メモ（概要）](book-memo/abstract.md)
 
 ## 論文メモ <a id="article-memo"></a>
 
-* [論文メモ（概要）](untitled-1.md)
+* [論文メモ（概要）](article-memo/abstract.md)
 
 ## 数学勉強ノート <a id="note"></a>
 

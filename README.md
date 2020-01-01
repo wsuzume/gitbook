@@ -8,9 +8,9 @@
 
 くらいの割合で勉強しているので機械学習などは更新が遅いかもしれない。
 
-更新についての報告は節目ごとにTwitterの [@wsuzume](https://twitter.com/wsuzume) のアカウントにて行う。意見や要望等あれば同アカウントにリプライやDMで連絡して構わない。
+更新についての報告は節目ごとにTwitterの [@wsuzume](https://twitter.com/wsuzume) のアカウントにて行う。指摘、意見、要望等あれば同アカウントにリプライやDMで連絡していただけると大変嬉しい限りである。
 
-本書は [https://github.com/wsuzume/gitbook](https://github.com/wsuzume/gitbook) に同期されており、そちらからMarkdown形式でダウンロードすることができる。
+本書は [https://github.com/wsuzume/gitbook](https://github.com/wsuzume/gitbook) に同期されており、そちらからMarkdown形式でのダウンロードは可能である。PDFでの配布は GitBook の無料プランを使用している関係上難しいので、折を見て電子書籍化するつもりである。
 
 本書は次の二つのトピックが一般読者向けである。
 

@@ -37,15 +37,25 @@ OSは **CentOS8** を用いる。理由は
 
 また ConoHa VPS では AWS のような至れり尽くせりのリソース支援を受けられるわけではないので、SSL/TLS通信の設定を自分で行う必要があるが、リバースプロキシでSSLオフローディングの設定を行うことでAPIサーバーの側ではSSL/TLS通信を考慮しなくてよい設計になっている。
 
-## APIサーバー
+## APIサーバー（golang/gin）
+
+APIサーバーがフロントエンドのUIも提供する。
+
+## フロントエンド（Elm）
 
 
 
-## DBサーバー
+## DBサーバー（MySQL）
 
 
 
-## KVS（Key Value Store）
+## KVS（Redis）
+
+
+
+## FirebaseによるAuthentication
+
+ユーザの認証には Google の Firebase を用いる。
 
 
 

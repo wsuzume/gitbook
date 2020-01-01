@@ -51,7 +51,13 @@
 ## Riemannian最適化 <a id="riemannian-optimization"></a>
 
 * [Riemannian最適化（概要）](riemannian-optimization/abstract.md)
-* [線形代数](riemannian-optimization/linear-algebra.md)
+* [概説](riemannian-optimization/overview.md)
+* [詳説](riemannian-optimization/detail/README.md)
+  * [位相空間論](riemannian-optimization/detail/topology.md)
+  * [解析学](riemannian-optimization/detail/analytics.md)
+  * [線形代数学](riemannian-optimization/detail/linear-algebra.md)
+  * [多様体論（解析幾何学）](riemannian-optimization/detail/duo-yang-ti-lun-jie-xi-ji-he-xue.md)
+  * [Riemann多様体](riemannian-optimization/detail/riemannian-manifold.md)
 
 ## プログラミング <a id="programming"></a>
 
@@ -76,4 +82,8 @@
 ## 論文メモ <a id="article-memo"></a>
 
 * [論文メモ（概要）](untitled-1.md)
+
+## 数学勉強ノート <a id="note"></a>
+
+* [集合](note/set.md)
 

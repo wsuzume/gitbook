@@ -55,9 +55,9 @@
 * [Riemannian最適化（概要）](riemannian-optimization/abstract.md)
 * [概説](riemannian-optimization/overview.md)
 * [詳説](riemannian-optimization/detail/README.md)
-  * [位相空間論](riemannian-optimization/detail/topology.md)
   * [解析学](riemannian-optimization/detail/analytics.md)
   * [線形代数学](riemannian-optimization/detail/linear-algebra.md)
+  * [位相空間論](riemannian-optimization/detail/topology.md)
   * [多様体論（解析幾何学）](riemannian-optimization/detail/duo-yang-ti-lun-jie-xi-ji-he-xue.md)
   * [Riemann多様体](riemannian-optimization/detail/riemannian-manifold.md)
 
@@ -96,4 +96,8 @@
 ## 固有値分解と特異値分解 <a id="evd-and-svd"></a>
 
 * [固有値分解/特異値分解とは](evd-and-svd/whats-evd-svd.md)
+
+## 考え事 <a id="thinking"></a>
+
+* [解説記事を書くときの工夫](thinking/worries-while-writing-explanation.md)
 

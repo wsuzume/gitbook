@@ -65,7 +65,10 @@
 * [プログラミング（概要）](programming/system-abstract.md)
 * [システムの構成](programming/system-architecture.md)
 * [サーバーのセットアップ](programming/setup-server/README.md)
-  * [OSセットアップ](programming/setup-server/setup-os.md)
+  * [OSセットアップ](programming/setup-server/setup-os/README.md)
+    * [ユーザの作成](programming/setup-server/setup-os/create-user.md)
+    * [SSHの設定](programming/setup-server/setup-os/ssh-setting.md)
+    * [ファイアウォールの設定](programming/setup-server/setup-os/firewall-setting.md)
   * [ドメインの取得と設定（Google domain）](programming/setup-server/domain.md)
 * [Dockerによる仮想化](programming/virtualize-with-docker.md)
 * [サーバーサイド（golang/gin）](programming/server-side.md)
@@ -88,4 +91,8 @@
 
 * [集合](note/sets.md)
 * [ファジィ集合](note/fuzzy-sets.md)
+
+## 固有値分解と特異値分解 <a id="evd-and-svd"></a>
+
+* [固有値分解/特異値分解とは](evd-and-svd/whats-evd-svd.md)
 

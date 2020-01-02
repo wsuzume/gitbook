@@ -22,6 +22,7 @@
     * [線形回帰](mml/machine-learning/hui-gui-wen-ti/xian-xing-hui-gui.md)
     * [線形基底関数モデル](mml/machine-learning/hui-gui-wen-ti/moderu.md)
     * [カーネル回帰](mml/machine-learning/hui-gui-wen-ti/kneru-2.md)
+    * [確率論からの導出](mml/machine-learning/hui-gui-wen-ti/from-probability.md)
     * [ガウス過程回帰](mml/machine-learning/hui-gui-wen-ti/gausu.md)
   * [分類問題](mml/machine-learning/fen-lei-wen-ti/README.md)
     * [SVM](mml/machine-learning/fen-lei-wen-ti/svm.md)
@@ -43,7 +44,7 @@
   * [ニュートン法](mml/continuous-optimization/newtons-method.md)
   * [共役勾配法](mml/continuous-optimization/conjugate-gradient-method.md)
   * [準ニュートン法](mml/continuous-optimization/quasi-newton-method.md)
-* [ベイズ的手法](mml/beizu.md)
+* [ベイズ推論](mml/beizu.md)
 
 ## カーネル法 <a id="kernel-method"></a>
 
@@ -65,7 +66,7 @@
 * [プログラミング（概要）](programming/system-abstract.md)
 * [システムの構成](programming/system-architecture.md)
 * [サーバーのセットアップ](programming/setup-server/README.md)
-  * [OSセットアップ](programming/setup-server/setup-os/README.md)
+  * [OSセットアップ](programming/setup-server/setup-os.md)
     * [ユーザの作成](programming/setup-server/setup-os/create-user.md)
     * [SSHの設定](programming/setup-server/setup-os/ssh-setting.md)
     * [ファイアウォールの設定](programming/setup-server/setup-os/firewall-setting.md)

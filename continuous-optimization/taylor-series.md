@@ -97,7 +97,7 @@ $$
 と書ける。幾何的な意味づけとしては$$\nabla f (\overline{x})$$は点$$\overline{x}$$における関数$$f(x)$$の勾配だから
 
 $$
-{\rm grad}f = \nabla f \tag{5}
+\operatorname{grad} f = \nabla f \tag{5}
 $$
 
 である。
@@ -123,7 +123,7 @@ $$
 
 と書ける。ただし$$H _ x = \nabla ^ \mathrm{T} \nabla f (x)$$であり、どの点における Hesse 行列なのかを明記している。書物によっては$$H _ x$$を単に$$H$$と書いていたりするので注意する。
 
-Hesse 行列はユークリッド空間上での Hessian 演算子 $${\rm Hess} f (x) \colon \mathbb{R} ^ n \to \mathbb{R} ^ n$$の行列表記であり、ユークリッド空間では
+Hesse 行列はユークリッド空間上での Hessian 演算子 $$\operatorname{Hess} f (x) \colon \mathbb{R} ^ n \to \mathbb{R} ^ n$$の行列表記であり、ユークリッド空間では
 
 $$
 {\rm Hess} f(x) \Delta x = \Delta x ^ \mathrm{T} H _ x \tag{7}
@@ -136,13 +136,13 @@ $$
 $$
 \begin{aligned}
 f _ {\rm I} (x) = f _ 1 (\overline{x} + \Delta x) &= f(\overline{x}) + \left< \nabla f(\overline{x}), \Delta x \right> \\
-&= f(\overline{x}) + \left< {\rm grad} f(\overline{x}), \Delta x \right> \\
+&= f(\overline{x}) + \left< \operatorname{grad} f(\overline{x}), \Delta x \right> \\
 f _ {\rm II} (x) = f _ 1 (\overline{x} + \Delta x) &= f(\overline{x}) +  \left< \nabla f(\overline{x}), \Delta x \right> + \left< \Delta x ^ \mathrm{T} H _ {\overline{x}}, \Delta x \right> \\
-&= f(\overline{x}) + \left< {\rm grad} f(\overline{x}), \Delta x \right> + \left< {\rm Hess} f(\overline{x}) \Delta x, \Delta x \right> \tag{8}
+&= f(\overline{x}) + \left< \operatorname{grad} f(\overline{x}), \Delta x \right> + \left< \operatorname{Hess} f(\overline{x}) \Delta x, \Delta x \right> \tag{8}
 \end{aligned}
 $$
 
-と書ける。$${\rm grad}$$や$${\rm Hess}$$を用いた表記は幾何的な意味との対応がついているので、ユークリッド空間以外でも$${\rm grad}, {\rm Hess}$$を定義すれば適用できる（本書でも Riemannian 最適化で登場する）。
+と書ける。$$\operatorname{grad}$$や$$\operatorname{Hess}$$を用いた表記は幾何的な意味との対応がついているので、ユークリッド空間以外でも$$\operatorname{grad}, \operatorname{Hess}$$を定義すれば適用できる（本書でも Riemannian 最適化で登場する）。
 
 ## 連続最適化との関係
 

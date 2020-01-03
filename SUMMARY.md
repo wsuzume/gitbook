@@ -42,12 +42,13 @@
 ## 連続最適化 <a id="continuous-optimization"></a>
 
 * [Taylor展開と関数近似](continuous-optimization/taylor-series.md)
+* [最適化問題](continuous-optimization/optimization-problem.md)
 * [直線探索法](continuous-optimization/line-search-method/README.md)
   * [最急降下法](continuous-optimization/line-search-method/gradient-descent.md)
-  * [Armijo条件・Wolfe条件](continuous-optimization/line-search-method/armijo-wolfe-condition.md)
-  * [ニュートン法](continuous-optimization/line-search-method/newtons-method.md)
-  * [共役勾配法](continuous-optimization/line-search-method/conjugate-gradient-method.md)
-  * [準ニュートン法](continuous-optimization/line-search-method/quasi-newton-method.md)
+  * [Armijo条件・Wolfe条件](mml/continuous-optimization/armijo-wolfe-condition.md)
+  * [ニュートン法](mml/continuous-optimization/newtons-method.md)
+  * [共役勾配法](mml/continuous-optimization/conjugate-gradient-method.md)
+  * [準ニュートン法](mml/continuous-optimization/quasi-newton-method.md)
 
 ## カーネル法 <a id="kernel-method"></a>
 
@@ -71,7 +72,7 @@
 * [プログラミング（概要）](programming/system-abstract.md)
 * [システムの構成](programming/system-architecture.md)
 * [サーバーのセットアップ](programming/setup-server/README.md)
-  * [OSセットアップ](programming/setup-server/setup-os/README.md)
+  * [OSセットアップ](programming/setup-server/setup-os.md)
     * [ユーザの作成](programming/setup-server/setup-os/create-user.md)
     * [SSHの設定](programming/setup-server/setup-os/ssh-setting.md)
     * [ファイアウォールの設定](programming/setup-server/setup-os/firewall-setting.md)

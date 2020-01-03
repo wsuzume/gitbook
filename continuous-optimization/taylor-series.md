@@ -1,0 +1,146 @@
+---
+description: 2020/1/4公開
+---
+
+# Taylor展開と関数近似
+
+Taylor展開による関数近似は直線探索法（line search method）と呼ばれる連続最適化手法を理解する上での基礎になる。
+
+Taylor展開可能な関数$$f \colon \mathbb{R} \to \mathbb{R} \colon x \mapsto f(x)$$の、点$$\overline{x}$$の周りのTaylor展開は、$$x = \overline{x} + \Delta x$$の変数変換のもとで
+
+$$
+\begin{aligned}
+f(x)= f(\overline{x} + \Delta x) &= \sum _ {n=0} ^ {+\infty} \frac{1}{n!} \frac{d ^ n f (\overline{x})}{dx ^ n} \Delta x ^ n \\
+&= f(\overline{x}) + \frac{d f (\overline{x})}{dx} \Delta x + \frac{1}{2} \frac{d ^ 2 f (\overline{x})}{dx ^ 2} \Delta x ^ 2 + \cdots
+\end{aligned} \tag{1}
+$$
+
+で与えられる。$$\overline{x}$$が定数で$$\Delta x$$が新たな変数である。つまり点$$\overline{x}$$から$$\Delta x$$だけ移動した点における点$$x = \overline{x} + \Delta x$$における$$f(x)$$の値が \(1\) 式によって任意の精度で近似できる。
+
+Taylor展開を$$\Delta x ^ n$$の項で打ち切った関数
+
+$$
+f _ n (x) = f _ n(\overline{x} + \Delta x) = f(\overline{x}) + \frac{d f (\overline{x})}{dx} \Delta x + \frac{1}{2} \frac{d ^ 2 f (\overline{x})}{dx ^ 2} \Delta x ^ 2 + \cdots + \frac{1}{n!}\frac{d ^ n f (\overline{x})}{dx ^ n} dx ^ n
+$$
+
+を$$f(x)$$の$$n$$次近似という。本書で紹介する連続最適化で使われるのは主に1次近似と2次近似であり、それぞれ
+
+$$
+\begin{aligned}
+f _ {\rm I} (x) &= f _ 1 (\overline{x} + \Delta x) = f(\overline{x}) + \frac{d f (\overline{x})}{dx} \Delta x \tag{2} \\
+f _ {\rm II} (x) &= f _ 1 (\overline{x} + \Delta x) = f(\overline{x}) + \frac{d f (\overline{x})}{dx} \Delta x + \frac{1}{2} \frac{d ^ 2 f (\overline{x})}{dx ^ 2} \Delta x ^ 2 
+\end{aligned}
+$$
+
+である。3次以上の項に着目することは少ない（c.f. self-concordant function）。
+
+同様に、Taylor展開可能な関数$$f \colon \mathbb{R} ^ n \to \mathbb{R} \colon x \mapsto f(x)$$の点$$\overline{x}$$の周りのTaylor展開は、
+
+$$
+x = \left(\begin{matrix}
+x _ 1 \\
+x _ 2 \\
+\vdots \\
+x _ n
+\end{matrix} \right) =  \left(\begin{matrix}
+\overline{x} _ 1 + \Delta x _ 1 \\
+\overline{x} _ 2 + \Delta x _ 2 \\
+\vdots \\
+\overline{x} _ n + \Delta x _ n
+\end{matrix} \right) = \left(\begin{matrix}
+\overline{x} _ 1 \\
+\overline{x} _ 2 \\
+\vdots \\
+\overline{x} _ n
+\end{matrix} \right) + \left(\begin{matrix}
+\Delta x _ 1 \\
+\Delta x _ 2 \\
+\vdots \\
+\Delta x _ n
+\end{matrix} \right) = \overline{x} + \Delta x
+$$
+
+の変数変換のもとで、
+
+$$
+f(x) = f(\overline{x} + \Delta x) =  f(\overline{x}) + \sum _ {i=1} ^ n \frac{\partial f (\overline{x})}{\partial x _ i} \Delta x _ i + \frac{1}{2} \sum _ {i=1} ^ n \sum _ {j=1} ^ n \frac{\partial ^ 2 f (\overline{x})}{\partial x _ i \partial x _ j} \Delta x _ i \Delta x _ j+ \cdots \tag{3}
+$$
+
+で与えられる。一般項は表記が面倒な上に、どうせ2次の項までしか使わないので書かなかった。
+
+ここでナブラ演算子$$\nabla$$を行ベクトル
+
+$$
+\nabla = \left( \frac{\partial }{\partial x _ 1}, \frac{\partial }{\partial x _ 2}, \cdots , \frac{\partial }{\partial x _ n} \right)
+$$
+
+として定義すると、
+
+$$
+\nabla f = \left( \frac{\partial f}{\partial x _ 1}, \frac{\partial f}{\partial x _ 2}, \cdots , \frac{\partial f}{\partial x _ n} \right)
+$$
+
+であるから、内積
+
+$$
+\left< a ^ \mathrm{T}, b\right> = a ^ \mathrm{T} b = \sum _ {i = 1} ^ n a _ i b _ i
+$$
+
+を用いることによって、\(3\) 式の1次の項は
+
+$$
+\left< \nabla f(\overline{x}), \Delta x \right> = \sum _ {i=1} ^ n \frac{\partial f (\overline{x})}{\partial x _ i} \Delta x _ i \tag{4}
+$$
+
+と書ける。幾何的な意味づけとしては$$\nabla f (\overline{x})$$は点$$\overline{x}$$における関数$$f(x)$$の勾配だから
+
+$$
+{\rm grad}f = \nabla f \tag{5}
+$$
+
+である。
+
+2次の項についても同様の行列形式による表記を行いたい。次の
+
+$$
+H = \nabla ^ \mathrm{T} \nabla f = \left(
+\begin{matrix}
+\frac{\partial ^ 2 f}{\partial x _ 1 \partial x _ 1} & \frac{\partial ^ 2 f}{\partial x _ 1 \partial x _ 2} & \cdots & \frac{\partial ^ 2 f}{\partial x _ 1 \partial x _ n} \\
+\frac{\partial ^ 2 f}{\partial x _ 2 \partial x _ 1} & \frac{\partial ^ 2 f}{\partial x _ 2 \partial x _ 2} & \cdots & \frac{\partial ^ 2 f}{\partial x _ 2 \partial x _ n} \\
+\vdots & \vdots & \ddots & \vdots \\
+\frac{\partial ^ 2 f}{\partial x _ n \partial x _ 1} & \frac{\partial ^ 2 f}{\partial x _ n \partial x _ 2} & \cdots & \frac{\partial ^ 2 f}{\partial x _ n \partial x _ n}
+\end{matrix}
+\right)
+$$
+
+で定義される$$H$$は Hesse 行列と呼ばれる。Hesse 行列を用いれば \(3\) 式の2次の項は
+
+$$
+\left< \Delta x ^ \mathrm{T} H _ {\overline{x}}, \Delta x \right> = \sum _ {i=1} ^ n \sum _ {j=1} ^ n \frac{\partial ^ 2 f (\overline{x})}{\partial x _ i \partial _ j} \Delta x _ i \Delta x _ j \tag{6}
+$$
+
+と書ける。ただし$$H _ x = \nabla ^ \mathrm{T} \nabla f (x)$$であり、どの点における Hesse 行列なのかを明記している。書物によっては$$H _ x$$を単に$$H$$と書いていたりするので注意する。
+
+Hesse 行列はユークリッド空間上での Hessian 演算子 $${\rm Hess} f (x) \colon \mathbb{R} ^ n \to \mathbb{R} ^ n$$の行列表記であり、ユークリッド空間では
+
+$$
+{\rm Hess} f(x) \Delta x = \Delta x ^ \mathrm{T} H _ x \tag{7}
+$$
+
+である。
+
+\(3\) 式に \(4\), \(5\), \(6\), \(7\) 式の結果を用いれば、関数$$f \colon \mathbb{R} ^ n \to \mathbb{R}$$の1次近似と2次近似はそれぞれ
+
+$$
+\begin{aligned}
+f _ {\rm I} (x) = f _ 1 (\overline{x} + \Delta x) &= f(\overline{x}) + \left< \nabla f(\overline{x}), \Delta x \right> \\
+&= f(\overline{x}) + \left< {\rm grad} f(\overline{x}), \Delta x \right> \\
+f _ {\rm II} (x) = f _ 1 (\overline{x} + \Delta x) &= f(\overline{x}) +  \left< \nabla f(\overline{x}), \Delta x \right> + \left< \Delta x ^ \mathrm{T} H _ {\overline{x}}, \Delta x \right> \\
+&= f(\overline{x}) + \left< {\rm grad} f(\overline{x}), \Delta x \right> + \left< {\rm Hess} f(\overline{x}) \Delta x, \Delta x \right> \tag{8}
+\end{aligned}
+$$
+
+と書ける。$${\rm grad}$$や$${\rm Hess}$$を用いた表記は幾何的な意味との対応がついているので、ユークリッド空間以外でも$${\rm grad}, {\rm Hess}$$を定義すれば適用できる（本書でも Riemannian 最適化で登場する）。
+
+
+

@@ -45,10 +45,20 @@
 * [最適化問題](continuous-optimization/optimization-problem.md)
 * [直線探索法](continuous-optimization/line-search-method/README.md)
   * [最急降下法](continuous-optimization/line-search-method/gradient-descent.md)
-  * [Armijo条件・Wolfe条件](mml/continuous-optimization/armijo-wolfe-condition.md)
-  * [ニュートン法](mml/continuous-optimization/newtons-method.md)
-  * [共役勾配法](mml/continuous-optimization/conjugate-gradient-method.md)
-  * [準ニュートン法](mml/continuous-optimization/quasi-newton-method.md)
+  * [Armijo条件・Wolfe条件](continuous-optimization/line-search-method/armijo-wolfe-condition.md)
+  * [ニュートン法](continuous-optimization/line-search-method/newtons-method.md)
+  * [共役勾配法](continuous-optimization/line-search-method/conjugate-gradient-method/README.md)
+    * [原始的な共役勾配法](continuous-optimization/line-search-method/conjugate-gradient-method/na.md)
+    * [PRP法](continuous-optimization/line-search-method/conjugate-gradient-method/prp-fa.md)
+    * [HS法](continuous-optimization/line-search-method/conjugate-gradient-method/hs-fa.md)
+  * [準ニュートン法](continuous-optimization/line-search-method/quasi-newton-method/README.md)
+    * [原理](continuous-optimization/line-search-method/quasi-newton-method/principle.md)
+    * [DFP法](continuous-optimization/line-search-method/quasi-newton-method/dfp-method.md)
+    * [BFGS法](continuous-optimization/line-search-method/quasi-newton-method/bfgs-method.md)
+    * [L-BFGS法](continuous-optimization/line-search-method/quasi-newton-method/lbfgs-method.md)
+    * [Broyden法（Broyden class）](continuous-optimization/line-search-method/quasi-newton-method/broyden-class-method.md)
+  * [確率的勾配降下法（SGD）](continuous-optimization/line-search-method/sgd.md)
+  * [確率的準ニュートン法（SQN）](continuous-optimization/line-search-method/sqn.md)
 
 ## カーネル法 <a id="kernel-method"></a>
 
@@ -72,7 +82,7 @@
 * [プログラミング（概要）](programming/system-abstract.md)
 * [システムの構成](programming/system-architecture.md)
 * [サーバーのセットアップ](programming/setup-server/README.md)
-  * [OSセットアップ](programming/setup-server/setup-os.md)
+  * [OSセットアップ](programming/setup-server/setup-os/README.md)
     * [ユーザの作成](programming/setup-server/setup-os/create-user.md)
     * [SSHの設定](programming/setup-server/setup-os/ssh-setting.md)
     * [ファイアウォールの設定](programming/setup-server/setup-os/firewall-setting.md)
@@ -93,15 +103,19 @@
 ## 論文メモ <a id="article-memo"></a>
 
 * [論文メモ（概要）](article-memo/abstract.md)
+* [Riemannian最適化](article-memo/riemannian-optimization/README.md)
+  * [A Broyden Class of Quasi-Newton Methods for Riemannian Optimization](article-memo/riemannian-optimization/a-broyden-class-of-quasi-newton-methods-for-riemannian-optimization.md)
 
 ## 数学勉強ノート <a id="note"></a>
 
 * [集合](note/sets.md)
 * [ファジィ集合](note/fuzzy-sets.md)
 
-## 固有値分解と特異値分解 <a id="evd-and-svd"></a>
+## 数値解析 <a id="numerical-analysis"></a>
 
-* [固有値分解/特異値分解とは](evd-and-svd/whats-evd-svd.md)
+* [常微分方程式](numerical-analysis/ode.md)
+* [偏微分方程式](numerical-analysis/pde.md)
+* [固有値分解/特異値分解](numerical-analysis/evd-and-svd.md)
 
 ## 考え事 <a id="thinking"></a>
 

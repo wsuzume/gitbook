@@ -5,7 +5,7 @@
 最適化問題
 
 $$
-\underset{x \in \mathbb{R} ^ n}{\operatorname{argmin}} \,\, f(x)
+\underset{x \in \mathbb{R} ^ n}{\operatorname{arg} \operatorname{min}} \,\, f(x)
 $$
 
 を考える。

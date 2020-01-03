@@ -4,7 +4,9 @@ description: 2020/1/4公開
 
 # Taylor展開と関数近似
 
-Taylor展開による関数近似は直線探索法（line search method）と呼ばれる連続最適化手法を理解する上での基礎になる。
+## Taylor展開と関数の1次近似、2次近似
+
+Taylor展開による関数近似は**直線探索法**（line search method）と呼ばれる連続最適化手法を理解する上での基礎になる。
 
 Taylor展開可能な関数$$f \colon \mathbb{R} \to \mathbb{R} \colon x \mapsto f(x)$$の、点$$\overline{x}$$の周りのTaylor展開は、$$x = \overline{x} + \Delta x$$の変数変換のもとで
 
@@ -142,5 +144,26 @@ $$
 
 と書ける。$${\rm grad}$$や$${\rm Hess}$$を用いた表記は幾何的な意味との対応がついているので、ユークリッド空間以外でも$${\rm grad}, {\rm Hess}$$を定義すれば適用できる（本書でも Riemannian 最適化で登場する）。
 
+## 連続最適化との関係
 
+連続最適化は、点$$x ^ k$$からある方向$$m ^ k$$に$$\alpha ^ k$$だけ進んだ点$$x ^ {k+1} = x ^ k + \alpha ^ k m ^ k$$が$$k \to +\infty$$の極限で最適解（または極値）に収束するような手法として構成されることが多い。
+
+点$$x ^ k$$は探索の起点であり固定するからTaylor展開における$$\overline{x}$$とみなせて、$$\alpha ^ k m ^ k$$は点$$\overline{x}$$からの変化なので$$\Delta x$$に対応する。つまり
+
+$$
+\begin{aligned}
+\overline{x} = x ^ k, \,\, \Delta x = \alpha ^ k m ^ k \quad (x ^ k, m ^ k \in \mathbb{R} ^ n, \alpha ^ k \in \mathbb{R})
+\end{aligned} \tag{10}
+$$
+
+であって
+
+$$
+\begin{aligned}
+x &= \overline{x} + \Delta x \\
+x ^ {k+1} &= x ^ k + \alpha ^ k m ^ k
+\end{aligned} \tag{11}
+$$
+
+の2式が対応している。今後は$$x ^ k$$などを用いる方の説明がメインになるが、\(10\), \(11\) 式を用いた式の書き換えは断りなしに行うことがあるので注意してほしい。
 

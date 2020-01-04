@@ -119,6 +119,6 @@
 
 ## 考え事 <a id="thinking"></a>
 
-* [解説記事を書く](thinking/writing-explanation.md)
+* [解説記事を書く](thinking/worries-while-writing-explanation.md)
 * [人体/思考のバグ](thinking/bags-of-human.md)
 

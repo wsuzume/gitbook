@@ -2,7 +2,7 @@
 description: 2020/1/4公開
 ---
 
-# 最適化問題
+# 3. 最適化問題
 
 \*\*\*\*$$\mathcal{S}$$を空でない任意の集合とする。$$\mathcal{S}$$上の**目的関数**（objective function）と呼ばれる関数$$f \colon \mathcal{S} \to \mathbb{R} \colon x \mapsto f(x)$$を最小化（または最大化）する点$$x ^ \ast$$を求める問題を$$\mathcal{S}$$上の**最適化問題**（optimization problem）という。この問題の解$$x ^ \ast$$は問題の**最適解**（optimal solution）という。
 

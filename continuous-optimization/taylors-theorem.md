@@ -57,7 +57,7 @@ $$
 が成り立つ。近似誤差は
 
 $$
-h _ n (\Delta x) \| \Delta x \| ^ n = o \left( \| \Delta x \| ^ n \right)
+h _ n (\Delta x) \| \Delta x \| ^ n = o \left( \| \Delta x \| ^ n \right) \tag{2.5}
 $$
 
 と評価できて、$$n = 1, 2$$の場合について
@@ -66,7 +66,7 @@ $$
 \begin{aligned}
 f (x) &= f _ {\rm I} (x) + o \left( \|\Delta x \| \right) \\
 f (x) &= f _ {\rm II} (x) + o \left( \|\Delta x \| ^ 2 \right)
-\end{aligned} \tag{2.5}
+\end{aligned} \tag{2.6}
 $$
 
 である。

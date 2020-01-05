@@ -41,7 +41,8 @@
 
 ## 連続最適化 <a id="continuous-optimization"></a>
 
-* [Taylor展開と関数近似](continuous-optimization/taylor-series.md)
+* [1. Taylor展開と関数近似](continuous-optimization/taylor-series.md)
+* [2. Taylorの定理と誤差の評価](continuous-optimization/taylors-theorem.md)
 * [最適化問題](continuous-optimization/optimization-problem.md)
 * [直線探索法](continuous-optimization/line-search-method/README.md)
   * [最急降下法](continuous-optimization/line-search-method/gradient-descent.md)

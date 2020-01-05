@@ -117,8 +117,3 @@
 * [偏微分方程式](numerical-analysis/pde.md)
 * [固有値分解/特異値分解](numerical-analysis/evd-and-svd.md)
 
-## 考え事 <a id="thinking"></a>
-
-* [解説記事を書く](thinking/worries-while-writing-explanation.md)
-* [人体/思考のバグ](thinking/bags-of-human.md)
-

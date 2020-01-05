@@ -15,11 +15,10 @@ description: 2020/1/6公開
 実際に理論的に解析するには、より緩い条件で成り立つ Taylor の定理を用いる。Taylor の定理は、整数$$n \,\,(n \geq 1)$$をとったとき、$$n$$階微分可能な関数$$f \colon \mathbb{R} \to \mathbb{R}$$に対して、次の性質
 
 $$
-f(x) = f(\overline{x}) + \frac{d f (\overline{x})}{dx} \Delta x + \frac{1}{2} \frac{d ^ 2 f (\overline{x})}{dx ^ 2} \Delta x ^ 2 + \cdots + \frac{1}{n!} \frac{d ^ n f (\overline{x})}{dx ^ n} \Delta x ^ n + h _ n (\Delta x) \Delta x ^ n \tag{2.1}
-$$
-
-$$
-\lim _ {\Delta x \to 0} h _ n (\Delta x) = 0
+\begin{aligned}
+f(x) = f(\overline{x}) + \frac{d f (\overline{x})}{dx} \Delta x + \frac{1}{2} \frac{d ^ 2 f (\overline{x})}{dx ^ 2} \Delta x ^ 2 + \cdots + \frac{1}{n!} \frac{d ^ n f (\overline{x})}{dx ^ n} \Delta x ^ n + h _ n (\Delta x) \Delta x ^ n \\
+\left( \lim _ {\Delta x \to 0} h _ n (\Delta x) = 0 \right)
+\end{aligned} \tag{2.1}
 $$
 
 を満たす関数$$h _ n\colon \mathbb{R} \to \mathbb{R}$$が存在するという主張である。

@@ -108,6 +108,7 @@
   * [Quasi-Newton Methods: Superlinear Convergence Without Line Searches for Self-Concordant Functions](article-memo/continuous-optimization/quasi-newton-methods-superlinear-convergence-without-line-searches-for-self-concordant-functions.md)
 * [Riemannian最適化](article-memo/riemannian-optimization/README.md)
   * [A Broyden Class of Quasi-Newton Methods for Riemannian Optimization](article-memo/riemannian-optimization/a-broyden-class-of-quasi-newton-methods-for-riemannian-optimization.md)
+  * [Riemannian stochastic quasi-Newton algorithm with variance reduction and its convergence analysis](article-memo/riemannian-optimization/riemannian-stochastic-quasi-newton-algorithm-with-variance-reduction-and-its-convergence-analysis.md)
 
 ## 数学勉強ノート <a id="note"></a>
 

@@ -1,3 +1,7 @@
+---
+description: 2020/1/6公開
+---
+
 # Quasi-Newton Methods: Superlinear Convergence Without Line Searches for Self-Concordant Functions
 
 ## メモ

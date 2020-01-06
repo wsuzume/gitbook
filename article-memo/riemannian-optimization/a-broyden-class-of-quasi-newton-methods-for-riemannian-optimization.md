@@ -1,3 +1,7 @@
+---
+description: 2020/1/4公開
+---
+
 # A Broyden Class of Quasi-Newton Methods for Riemannian Optimization
 
 ## メモ

@@ -104,6 +104,8 @@
 ## 論文メモ <a id="article-memo"></a>
 
 * [論文メモ（概要）](article-memo/abstract.md)
+* [連続最適化](article-memo/continuous-optimization/README.md)
+  * [Quasi-Newton Methods: Superlinear Convergence Without Line Searches for Self-Concordant Functions](article-memo/continuous-optimization/quasi-newton-methods-superlinear-convergence-without-line-searches-for-self-concordant-functions.md)
 * [Riemannian最適化](article-memo/riemannian-optimization/README.md)
   * [A Broyden Class of Quasi-Newton Methods for Riemannian Optimization](article-memo/riemannian-optimization/a-broyden-class-of-quasi-newton-methods-for-riemannian-optimization.md)
 

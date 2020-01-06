@@ -1,2 +1,2 @@
-# 4.2. Armijo条件・Wolfe条件
+# Armijo条件・Wolfe条件
 

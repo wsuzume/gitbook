@@ -4,6 +4,25 @@ description: 2020/1/6公開
 
 # 4.1. 最急降下法
 
+## アルゴリズム
+
+1. 初期値$$x ^ 0 \in \mathbb{R} ^ n$$を定める（定め方は任意である）
+
+2. 探索方向$$m ^ k$$を点$$x ^ k$$における勾配によって$$m ^ k = - \operatorname{grad} f (x ^ k)$$と定める
+
+3. ステップサイズ$$t ^ k > 0$$を定める（定め方は任意である）
+
+4. 次の更新式を用いて現在の点を更新する
+
+$$
+\begin{aligned}
+x ^ {k+1} &= x ^ k + t ^ k m ^ k \\
+&= x ^ k - t ^ k \operatorname{grad} f ( x ^ k )
+\end{aligned}
+$$
+
+5. 手順 2 へ戻る
+
 ## 原理
 
 **最急降下法**（steepest descent）はもっとも単純で基本的な直線探索法だが、目的関数の勾配（gradient）さえ計算できれば適用できるので汎用性が高い。
@@ -152,7 +171,7 @@ $$
 \end{aligned}
 $$
 
-が成り立つ。
+が成り立つので$$m ^ k$$は依然として降下方向である。
 
 {% page-ref page="quasi-newton-method/" %}
 

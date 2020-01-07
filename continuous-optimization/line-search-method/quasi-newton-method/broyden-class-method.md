@@ -1,2 +1,2 @@
-# Broyden法（Broyden class）
+# 4.5.3. Broyden法
 

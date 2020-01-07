@@ -1,4 +1,4 @@
-# HS法
+# 4.4.3. HS法
 
 英語では Hestenes and Stiefel conjugate gradient method と呼ばれる。長いので HS 法とか HSCG 法と略されることもある。
 

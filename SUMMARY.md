@@ -53,13 +53,13 @@
     * [4.4.2. PRP法](continuous-optimization/line-search-method/conjugate-gradient-method/prp-fa.md)
     * [4.4.3. HS法](continuous-optimization/line-search-method/conjugate-gradient-method/hs-fa.md)
   * [4.5. 準ニュートン法](continuous-optimization/line-search-method/quasi-newton-method/README.md)
-    * [4.5.1. 原理](continuous-optimization/line-search-method/quasi-newton-method/principle.md)
-    * [4.5.2. DFP法](continuous-optimization/line-search-method/quasi-newton-method/dfp-method.md)
-    * [4.5.3. BFGS法](continuous-optimization/line-search-method/quasi-newton-method/bfgs-method.md)
-    * [4.5.4. Broyden法](continuous-optimization/line-search-method/quasi-newton-method/broyden-class-method.md)
-    * [4.5.5. L-BFGS法](continuous-optimization/line-search-method/quasi-newton-method/lbfgs-method.md)
-  * [4.6. 確率的勾配降下法（SGD）](continuous-optimization/line-search-method/sgd.md)
-  * [4.7. 確率的準ニュートン法（SQN）](continuous-optimization/line-search-method/sqn.md)
+    * [4.5.1. DFP法](continuous-optimization/line-search-method/quasi-newton-method/dfp-method.md)
+    * [4.5.2. BFGS法](continuous-optimization/line-search-method/quasi-newton-method/bfgs-method.md)
+    * [4.5.3. Broyden法](continuous-optimization/line-search-method/quasi-newton-method/broyden-class-method.md)
+    * [4.5.4. L-BFGS法](continuous-optimization/line-search-method/quasi-newton-method/lbfgs-method.md)
+* [5. 確率的最適化](continuous-optimization/stochastic-optimization/README.md)
+  * [5.1. 確率的勾配降下法（SGD）](continuous-optimization/stochastic-optimization/sgd.md)
+  * [5.2. 確率的準ニュートン法（SQN）](continuous-optimization/stochastic-optimization/sqn.md)
 
 ## カーネル法 <a id="kernel-method"></a>
 

@@ -73,7 +73,7 @@
   * [解析学](riemannian-optimization/detail/analytics.md)
   * [線形代数学（反変性・共変性・不変量）](riemannian-optimization/detail/linear-algebra.md)
   * [テンソル解析](riemannian-optimization/detail/tensor-analysis.md)
-  * [微分形式](riemannian-optimization/detail/differential-form.md)
+  * [リーマン積分と微分形式](riemannian-optimization/detail/differential-form.md)
   * [位相空間論](riemannian-optimization/detail/topology.md)
   * [多様体論（解析幾何学）](riemannian-optimization/detail/duo-yang-ti-lun-jie-xi-ji-he-xue.md)
   * [Riemann多様体](riemannian-optimization/detail/riemannian-manifold.md)
@@ -114,6 +114,7 @@
 
 * [集合](note/sets.md)
 * [ファジィ集合](note/fuzzy-sets.md)
+* [ルベーグ積分](note/lebesgue.md)
 
 ## 数値解析 <a id="numerical-analysis"></a>
 

@@ -160,7 +160,7 @@ $$
 となる。また、直線探索なので$$\frac{d m ^ k}{dt} \parallel m ^ k$$だから、\(4.4.12\) 式と定数$$c \neq 0$$を用いて
 
 $$
-\left< \nabla f (x ^ {k+1}), \frac{d m ^ {k+1}}{dt}\right> = \left< \nabla f (x ^ {k+1}), c m ^ k \right> = c \left< \nabla f (x ^ {k+1}), m ^ k \right> = 0\tag{4.4.13}
+\left< \nabla f (x ^ {k+1}), \frac{d m ^ k}{dt}\right> = \left< \nabla f (x ^ {k+1}), c m ^ k \right> = c \left< \nabla f (x ^ {k+1}), m ^ k \right> = 0\tag{4.4.13}
 $$
 
 となることがわかる。ゆえに

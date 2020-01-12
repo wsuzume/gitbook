@@ -13,7 +13,7 @@ description: 2020/1/8公開
 $$
 \begin{aligned}
 x ^ {k+1} &= x ^ k + \Delta x ^ k \\
-&= x ^ k - H _ {x ^ k} ^ {-1} \operatorname{grad} f ( x ^ k )
+&= x ^ k - H _ {x _ {(k)}} ^ {-1} \operatorname{grad} f ( x ^ k )
 \end{aligned}
 $$
 
@@ -52,7 +52,7 @@ $$
 - H _ {x ^ k} \Delta x = \operatorname{grad} f (x ^ k) \tag{4.3.5}
 $$
 
-である。ただし Hessian operator は Hesse 行列による表記に直した。Hesse 行列が正則ならば連立方程式 \(4.3.5\) を満たす解は、両辺に左から$$- H _{x ^ k} ^ {-1}$$をかけることで
+である。ただし Hessian operator は Hesse 行列による表記に直した。Hesse 行列が正則ならば連立方程式 \(4.3.5\) を満たす解は、両辺に左から$$- H _{x _ {(k)}} ^ {-1}$$をかけることで
 
 $$
 \Delta x = - H _ {x ^ k} ^ {-1} \operatorname{grad} f (x ^ k) \tag{4.3.6}

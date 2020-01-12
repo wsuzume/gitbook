@@ -106,6 +106,7 @@
 * [論文メモ（概要）](article-memo/abstract.md)
 * [線形代数](article-memo/linear-algebra/README.md)
   * [The Matrix Cookbook](article-memo/linear-algebra/the-matrix-cookbook.md)
+  * [ON THE EARLY HISTORY OF THE SINGULAR VALUE DECOMPOSITION](article-memo/linear-algebra/on-the-early-history-of-the-singular-value-decomposition.md)
   * [The tensor rank decomposition](article-memo/linear-algebra/the-tensor-rank-decomposition.md)
 * [連続最適化](article-memo/continuous-optimization/README.md)
   * [Quasi-Newton Methods: Superlinear Convergence Without Line Searches for Self-Concordant Functions](article-memo/continuous-optimization/quasi-newton-methods-superlinear-convergence-without-line-searches-for-self-concordant-functions.md)

@@ -6,5 +6,7 @@ Tucker分解とHitchcock分解（CP分解）について非常に詳しく分析
 
 ## 論文
 
-[https://people.cs.kuleuven.be/~nick.vannieuwenhoven/papers/ThesisNick.pdf](https://people.cs.kuleuven.be/~nick.vannieuwenhoven/papers/ThesisNick.pdf)
+{% embed url="https://people.cs.kuleuven.be/~nick.vannieuwenhoven/papers/ThesisNick.pdf" %}
+
+
 

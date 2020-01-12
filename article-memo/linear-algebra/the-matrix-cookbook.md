@@ -6,7 +6,9 @@
 
 
 
-## 論文（というよりは本？）
+## 論文
 
-[https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
+{% embed url="https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf" %}
+
+
 

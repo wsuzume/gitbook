@@ -10,5 +10,7 @@ Riemann 多様体上での SQN-VR のアルゴリズムと収束性。
 
 ## 論文
 
-[http://proceedings.mlr.press/v84/kasai18a/kasai18a.pdf](http://proceedings.mlr.press/v84/kasai18a/kasai18a.pdf)
+{% embed url="http://proceedings.mlr.press/v84/kasai18a/kasai18a.pdf" %}
+
+
 

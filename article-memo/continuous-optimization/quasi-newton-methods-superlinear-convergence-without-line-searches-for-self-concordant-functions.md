@@ -12,5 +12,5 @@ self-concordant function という凸関数よりも制約が厳しいクラス�
 
 ## 論文
 
-[https://arxiv.org/abs/1612.06965](https://arxiv.org/abs/1612.06965)
+{% embed url="https://arxiv.org/abs/1612.06965" %}
 

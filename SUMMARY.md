@@ -67,6 +67,7 @@
 
 ## Riemannian最適化 <a id="riemannian-optimization"></a>
 
+* [Riemann多様体って？](riemannian-optimization/riemanntte.md)
 * [Riemannian最適化（概要）](riemannian-optimization/abstract.md)
 * [概説](riemannian-optimization/overview.md)
 * [詳説](riemannian-optimization/detail/README.md)

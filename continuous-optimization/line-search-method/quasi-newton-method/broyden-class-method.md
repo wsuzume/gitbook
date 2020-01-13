@@ -1,6 +1,4 @@
 # 4.5.3. Broyden法
 
-## アルゴリズム
-
-
+Broyden法（Broyden's method）
 

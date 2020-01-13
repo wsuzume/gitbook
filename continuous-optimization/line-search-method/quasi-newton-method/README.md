@@ -14,7 +14,13 @@ $$
 m _ {(k)} = - B _ {(k)} ^ {-1} \operatorname{grad} f(x _ {(k)})
 $$
 
-　によって定める（ただし$$B _ {(k)}$$はセカント条件を満たす正定値行列である）
+　または
+
+$$
+m _ {(k)} = - H _ {(k)} \operatorname{grad} f(x _ {(k)})
+$$
+
+　によって定める（ただし$$B _ {(k)}, H _ {(k)}$$はセカント条件を満たす正定値行列である）
 
 3. 直線探索によってステップサイズ$$\alpha_{(k)}$$を定める
 
@@ -23,9 +29,17 @@ $$
 $$
 \begin{aligned}
 x _ {(k+1)} = - \alpha _ {(k)} B _ {(k)} ^ {-1} \operatorname{grad} f (x _ {(k)}) \\
-B _ {k+1} = ({\rm some \, update \, formula})
+B _ {(k+1)} = ({\rm some \, update \, formula})
 \end{aligned}
 $$
+
+　または
+
+$$
+H _ {(k+1)} = ({\rm some \, update \, formula})
+$$
+
+　$$B _ {(k)}, H _ {(k)}$$の更新式は DFP 法や BFGS 法の項目を参照のこと。
 
 ## 準ニュートン法
 

@@ -6,14 +6,14 @@ description: 2020/1/8公開
 
 ## アルゴリズム
 
-1. 初期値$$x ^ 0 \in \mathbb{R} ^ n$$を定める（定め方は任意である）
+1. 初期値$$x _ {(0)} \in \mathbb{R} ^ n$$を定める（定め方は任意である）
 
 2. 収束するまで次の更新式を用いて更新を繰り返す
 
 $$
 \begin{aligned}
-x ^ {k+1} &= x ^ k + \Delta x ^ k \\
-&= x ^ k - H _ {x _ {(k)}} ^ {-1} \operatorname{grad} f ( x ^ k )
+x _ {(k+1)} &= x _ {(k)} + \Delta x _ {(k)} \\
+&= x _ {(k)} - H _ {x _ {(k)}} ^ {-1} \operatorname{grad} f ( x _ {(k)} )
 \end{aligned}
 $$
 
@@ -40,7 +40,7 @@ $$
 \nabla f _ {\rm II} (x) = 0 \tag{4.3.3}
 $$
 
-となる場所を見つければよい。\(4.3.2\) 式の右辺では$$\overline{x}$$は定数であり$$\Delta x$$が$$x$$の関数であることに注意する。具体的には \(1.2.2\) 式の書き換えを用いているので $$\Delta x = x - x ^ k$$である。このことを考慮しつつ \(4.3.2\) 式の両辺を$$x$$で微分すると
+となる場所を見つければよい。\(4.3.2\) 式の右辺では$$\overline{x}$$は定数であり$$\Delta x$$が$$x$$の関数であることに注意する。具体的には \(1.2.2\) 式の書き換えを用いているので $$\Delta x = x - x _ {(k)}$$である。このことを考慮しつつ \(4.3.2\) 式の両辺を$$x$$で微分すると
 
 $$
 \nabla f _ {\rm II} (x) = \operatorname{grad} f (\overline{x}) + \operatorname{Hess} f (\overline{x}) \Delta x \tag{4.3.4}
@@ -49,13 +49,13 @@ $$
 となるから、$$\nabla f _ {\rm II}(x) = 0$$となるとき
 
 $$
-- H _ {x ^ k} \Delta x = \operatorname{grad} f (x ^ k) \tag{4.3.5}
+- H _ {x ^ k} \Delta x = \operatorname{grad} f (x _ {(k)}) \tag{4.3.5}
 $$
 
 である。ただし Hessian operator は Hesse 行列による表記に直した。Hesse 行列が正則ならば連立方程式 \(4.3.5\) を満たす解は、両辺に左から$$- H _{x _ {(k)}} ^ {-1}$$をかけることで
 
 $$
-\Delta x = - H _ {x ^ k} ^ {-1} \operatorname{grad} f (x ^ k) \tag{4.3.6}
+\Delta x = - H _ {x _ {(k)}} ^ {-1} \operatorname{grad} f (x _ {(k)}) \tag{4.3.6}
 $$
 
 と唯一通りに定まる。なお、\(4.3.6\) 式による更新が最適解へ向かうためには Hesse 行列が常に正則であることに加えて正定値でなければならない。

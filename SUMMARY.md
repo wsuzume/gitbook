@@ -82,8 +82,11 @@
 
 ## プログラミング入門 <a id="programming-tutorial"></a>
 
-* [いつ始める？どれくらい勉強する？](programming-tutorial/why-when-how-much.md)
-* [どうやって勉強する？本書をどう使う？](programming-tutorial/how.md)
+* [はじめに](programming-tutorial/attitude.md)
+* [勉強すること](programming-tutorial/study-hard.md)
+* [いつ始める？どれくらい勉強する？](programming-tutorial/when-how-much.md)
+* [どうやって勉強する？](programming-tutorial/how.md)
+* [どこから手をつけたらいい？](programming-tutorial/where.md)
 
 ## プログラミング <a id="programming"></a>
 

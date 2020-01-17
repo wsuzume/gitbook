@@ -80,6 +80,11 @@
   * [多様体論（解析幾何学）](riemannian-optimization/detail/duo-yang-ti-lun-jie-xi-ji-he-xue.md)
   * [Riemann多様体](riemannian-optimization/detail/riemannian-manifold.md)
 
+## プログラミング入門 <a id="programming-tutorial"></a>
+
+* [いつ始める？どれくらい勉強する？](programming-tutorial/why-when-how-much.md)
+* [どうやって勉強する？本書をどう使う？](programming-tutorial/how.md)
+
 ## プログラミング <a id="programming"></a>
 
 * [プログラミング（概要）](programming/system-abstract.md)

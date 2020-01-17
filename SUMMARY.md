@@ -80,13 +80,14 @@
   * [多様体論（解析幾何学）](riemannian-optimization/detail/duo-yang-ti-lun-jie-xi-ji-he-xue.md)
   * [Riemann多様体](riemannian-optimization/detail/riemannian-manifold.md)
 
-## プログラミング入門 <a id="programming-tutorial"></a>
+## プログラミングサイドブック <a id="programming-side-book"></a>
 
-* [はじめに](programming-tutorial/attitude.md)
-* [勉強すること](programming-tutorial/study-hard.md)
-* [いつ始める？どれくらい勉強する？](programming-tutorial/when-how-much.md)
-* [どうやって勉強する？](programming-tutorial/how.md)
-* [どこから手をつけたらいい？](programming-tutorial/where.md)
+* [はじめに](programming-side-book/attitude.md)
+* [Step 0. 勉強の仕方](programming-side-book/study-hard/README.md)
+  * [いつ始める？どれくらい勉強する？](programming-side-book/study-hard/when-how-much.md)
+  * [どうやって勉強する？](programming-side-book/study-hard/how.md)
+  * [どこから手をつけたらいい？](programming-side-book/study-hard/where.md)
+* [Step 1. インターネットで調べる](programming-side-book/using-internet.md)
 
 ## プログラミング <a id="programming"></a>
 

@@ -88,6 +88,10 @@
   * [どうやって勉強する？](programming-side-book/study-hard/how.md)
   * [どこから手をつけたらいい？](programming-side-book/study-hard/where.md)
 * [Step 1. インターネットで調べる](programming-side-book/using-internet.md)
+* [Step 2. コンピュータの仕組みを学ぶ](programming-side-book/step-2-konpytanomiwobu.md)
+* [Step 3. 開発環境を整える](programming-side-book/step-3-woeru.md)
+* [Step 4. プログラミング言語を学ぶ](programming-side-book/step-4-puroguraminguwobu.md)
+* [Step 5. 次のステップへ進むには](programming-side-book/step-5-nosuteppuhemuniha.md)
 
 ## プログラミング <a id="programming"></a>
 
@@ -124,6 +128,8 @@
 * [Riemannian最適化](article-memo/riemannian-optimization/README.md)
   * [A Broyden Class of Quasi-Newton Methods for Riemannian Optimization](article-memo/riemannian-optimization/a-broyden-class-of-quasi-newton-methods-for-riemannian-optimization.md)
   * [Riemannian stochastic quasi-Newton algorithm with variance reduction and its convergence analysis](article-memo/riemannian-optimization/riemannian-stochastic-quasi-newton-algorithm-with-variance-reduction-and-its-convergence-analysis.md)
+  * [Primal-Dual Optimization Algorithms over Riemannian Manifolds: an Iteration Complexity Analysis](article-memo/riemannian-optimization/primal-dual-optimization-algorithms-over-riemannian-manifolds-an-iteration-complexity-analysis.md)
+  * [Extending FISTA to Riemannian Optimization for Sparse PCA](article-memo/riemannian-optimization/extending-fista-to-riemannian-optimization-for-sparse-pca.md)
 * [RCD空間](article-memo/rcd-kong-jian/README.md)
   * [On the geometry of metric measure spaces. I](article-memo/rcd-kong-jian/on-the-geometry-of-metric-measure-spaces.-i.md)
   * [On the geometry of metric measure spaces. II](article-memo/rcd-kong-jian/on-the-geometry-of-metric-measure-spaces.-ii.md)

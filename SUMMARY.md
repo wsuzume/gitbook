@@ -92,6 +92,7 @@
 * [Step 3. 開発環境を整える](programming-side-book/step-3-woeru.md)
 * [Step 4. プログラミング言語を学ぶ](programming-side-book/step-4-puroguraminguwobu.md)
 * [Step 5. 次のステップへ進むには](programming-side-book/step-5-nosuteppuhemuniha.md)
+* [Step 6. 情報科学を学ぶ](programming-side-book/step-6-wobu.md)
 
 ## プログラミング <a id="programming"></a>
 

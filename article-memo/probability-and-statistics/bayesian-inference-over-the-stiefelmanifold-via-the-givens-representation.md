@@ -2,7 +2,7 @@
 description: 2020/1/31公開
 ---
 
-# Bayesian Inference over the StiefelManifold via the Givens Representation
+# Bayesian Inference over the Stiefel Manifold via the Givens Representation
 
 ## メモ
 

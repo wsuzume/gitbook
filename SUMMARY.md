@@ -37,7 +37,7 @@
   * [白色化](mml/data-science/bai-se-hua.md)
   * [低ランク行列近似](mml/data-science/ranku.md)
   * [行列補完](mml/data-science/hang-lie-bu-wan.md)
-* [ベイズ推論](mml/beizu/README.md)
+* [ベイズ推論](mml/beizu.md)
   * [確率](mml/beizu/que-lv.md)
   * [確率分布](mml/beizu/que-lv-fen-bu.md)
   * [ちょっとだけ振り返って](mml/beizu/chottodakeritte.md)

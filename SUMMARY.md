@@ -11,7 +11,7 @@
   * [2.2. 回帰問題](mml/machine-learning/hui-gui-wen-ti/README.md)
     * [2.2.1. 線形回帰](mml/machine-learning/hui-gui-wen-ti/xian-xing-hui-gui.md)
     * [2.2.2. 重線形回帰と正則化](mml/machine-learning/regression/222-to.md)
-    * [2.2.3. 線形基底関数モデル](mml/machine-learning/hui-gui-wen-ti/moderu.md)
+    * [2.2.3. 線形基底関数モデル](mml/machine-learning/regression/moderu.md)
     * [2.2.4. カーネル回帰](mml/machine-learning/hui-gui-wen-ti/kneru-2.md)
     * [2.2.5. ガウス過程回帰](mml/machine-learning/hui-gui-wen-ti/gausu.md)
   * [分類問題](mml/machine-learning/fen-lei-wen-ti/README.md)

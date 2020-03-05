@@ -210,6 +210,7 @@
 * [確率・統計](article-memo/probability-and-statistics/README.md)
   * [Statistical inference of Langevin  distributionfor directional data](article-memo/probability-and-statistics/statistical-inference-of-langevin-distributionfor-directional-data.md)
   * [Bayesian Inference over the Stiefel Manifold via the Givens Representation](article-memo/probability-and-statistics/bayesian-inference-over-the-stiefelmanifold-via-the-givens-representation.md)
+  * [あとで読む（Langevin distribution）](article-memo/probability-and-statistics/atodemulangevin-distribution.md)
 * [Riemannian最適化](article-memo/riemannian-optimization/README.md)
   * [A Broyden Class of Quasi-Newton Methods for Riemannian Optimization](article-memo/riemannian-optimization/a-broyden-class-of-quasi-newton-methods-for-riemannian-optimization.md)
   * [Riemannian stochastic quasi-Newton algorithm with variance reduction and its convergence analysis](article-memo/riemannian-optimization/riemannian-stochastic-quasi-newton-algorithm-with-variance-reduction-and-its-convergence-analysis.md)

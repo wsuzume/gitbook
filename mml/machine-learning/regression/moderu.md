@@ -8,3 +8,18 @@
 
 実は前回の重線形回帰モデルから変更点はひとつしかない。前回は「切片の項がアンバランスだから」という理由で$$\phi(x)$$という関数を定義したが、実は線形基底関数モデルを見越してのことであり、今回はこの$$\phi(x)$$をいじるだけである。
 
+## 確率モデルと正則化
+
+$$
+p(y, x, w) = p(y|x,w)p(x)p(w)
+$$
+
+$$
+p(y, w|x)p(x) = p(y|x,w)p(x)p(w) \\
+p(y,w|x)=p(y|x,w)p(w)
+$$
+
+$$
+\underset{a \in \mathbb{R}}{\operatorname{arg} \operatorname{max}} \,\,p (\mathcal{D})
+$$
+

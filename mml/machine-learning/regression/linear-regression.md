@@ -2,7 +2,7 @@
 description: 2020/3/25公開
 ---
 
-# 2.2.1. 線形回帰
+# 2.2.1. 線形回帰の基礎
 
 ## 導入
 
@@ -78,18 +78,18 @@ $$
 
 である。パラメータ$$\sigma ^ 2$$は今後の計算にはあまり関わってこないので、議論の簡略化のため既知の定数とした。ちなみに、今回のように出力$$y$$がある確率分布から生成されるモデルを**生成モデル**（generative model）という。
 
-観測した$$n$$個のデータ点の集合を
+観測した$$N$$個のデータ点の集合を
 
 $$
-\mathcal{D} = \left\{ (x ^ {(1)}, y ^ {(1)}), (x ^ {(2)}, y ^ {(2)}), \ldots, (x ^ {(n)}, y ^ {(n)}) \right \} \tag{2.2.1.9}
+\mathcal{D} = \left\{ (x ^ {(1)}, y ^ {(1)}), (x ^ {(2)}, y ^ {(2)}), \ldots, (x ^ {(N)}, y ^ {(N)}) \right \} \tag{2.2.1.9}
 $$
 
 とおく。$$\mathcal{D} ^ {(i)} = (x ^ {(i)}, y ^ {(i)})$$は$$i$$番目に観測されたデータ点を表す。また出力と入力を分けるときは
 
 $$
 \begin{aligned}
-\mathcal{D}_y = \left\{  y ^ {(1)}, y ^ {(2)}, \ldots, y ^ {(n)} \right \} \\
-\mathcal{D}_x = \left\{ x ^ {(1)}, x ^ {(2)},  \ldots, x ^ {(n)}\right \}
+\mathcal{D}_y = \left\{  y ^ {(1)}, y ^ {(2)}, \ldots, y ^ {(N)} \right \} \\
+\mathcal{D}_x = \left\{ x ^ {(1)}, x ^ {(2)},  \ldots, x ^ {(N)}\right \}
 \end{aligned} \tag{2.2.1.10}
 $$
 
@@ -130,22 +130,22 @@ $$
 
 となるので、$$(2.2.1.12)$$式の両辺が形式的にでも等号で結ばれるのは$$p(y) = p(a) = {\rm const.}$$という特殊な状況だけだからである。
 
-では$$n$$個のデータ点を観測した場合に話を戻そう。各データ点の観測が独立で、同じ確率分布からのサンプリングであると仮定する。このとき$$n$$個のデータの確率分布は
+では$$N$$個のデータ点を観測した場合に話を戻そう。各データ点の観測が独立で、同じ確率分布からのサンプリングであると仮定する。このとき$$N$$個のデータの確率分布は
 
 $$
 \begin{aligned}
-p(\mathcal{D} _ y | \mathcal{D} _ x, a) &= p(y ^ {(1)}| x ^ {(1)}, a) \times  \cdots \times p(y^{(n)}|x^{(n)}, a) \\
-&= \prod _ {i=1} ^ n p(y ^ {(i)}| x ^ {(i)}, a) \\
-&= \prod _ {i=1} ^ n \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \exp \left(- \frac{(y ^ {(i)} - ax ^ {(i)}) ^ 2}{2 \sigma ^ 2} \right)
+p(\mathcal{D} _ y | \mathcal{D} _ x, a) &= p(y ^ {(1)}| x ^ {(1)}, a) \times  \cdots \times p(y^{(N)}|x^{(N)}, a) \\
+&= \prod _ {i=1} ^ N p(y ^ {(i)}| x ^ {(i)}, a) \\
+&= \prod _ {i=1} ^ N \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \exp \left(- \frac{(y ^ {(i)} - ax ^ {(i)}) ^ 2}{2 \sigma ^ 2} \right)
 \end{aligned} \tag{2.2.1.14}
 $$
 
-と表せる。具体的な状況としては、入力$$x ^ {(1)}, x^{(2)}, \ldots, x ^ {(n)}$$のときの出力を観測する、と決めたがまだ実際には出力$$y ^ {(1)}, y ^ {(2)}, \ldots, y ^ {(n)}$$の観測を行っていない状態（まだ確率変数）である。
+と表せる。具体的な状況としては、入力$$x ^ {(1)}, x^{(2)}, \ldots, x ^ {(N)}$$のときの出力を観測する、と決めたがまだ実際には出力$$y ^ {(1)}, y ^ {(2)}, \ldots, y ^ {(N)}$$の観測を行っていない状態（まだ確率変数）である。
 
-出力$$y ^ {(1)}, y ^ {(2)}, \ldots, y ^ {(n)}$$を観測する（実現値を代入して定数とみなす）ことで再び尤度関数が定義できる。すなわち
+出力$$y ^ {(1)}, y ^ {(2)}, \ldots, y ^ {(N)}$$を観測する（実現値を代入して定数とみなす）ことで再び尤度関数が定義できる。すなわち
 
 $$
-\mathcal{L}(a|\mathcal{D}) = \prod _ {i=1} ^ n \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \exp \left(- \frac{(y ^ {(i)} - ax ^ {(i)}) ^ 2}{2 \sigma ^ 2} \right) \tag{2.2.1.15}
+\mathcal{L}(a|\mathcal{D}) = \prod _ {i=1} ^ N \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \exp \left(- \frac{(y ^ {(i)} - ax ^ {(i)}) ^ 2}{2 \sigma ^ 2} \right) \tag{2.2.1.15}
 $$
 
 である。この尤度関数を最大化することで$$a$$を求めるから、この最適化問題は
@@ -164,7 +164,7 @@ $$
 
 のように表記される（$$a ^ \ast$$は$$a _ {\rm opt.}$$などの表記も好まれる）。厳密には最大値を与える$$a$$はひとつとは限らず右辺は集合を表しているものと解釈されるため、左辺が実数であるという意図と矛盾するので、上式のような表記は本来であれば好ましくないのだが、論文や書籍ではよく用いられる。
 
-同様に**最小化問題**（minimization problem）では$$\operatorname{arg} \operatorname{min}$$を用い、これは argument of the minimum の略である。
+同様に**最小化問題**（minimization problem）では$$\operatorname{arg} \operatorname{min}$$を用い、これは argument of the minimum の略である。また、最大化問題や最小化問題の対象となる関数、ここでは$$\mathcal{L}(a | \mathcal{D})$$のことを**目的関数**（objective function）という。
 
 ## 最適化問題を解く
 
@@ -189,27 +189,27 @@ $$(2.2.1.19)$$式の左辺の$$\ln \mathcal{L}(a | \mathcal{D})$$を変形して
 
 $$
 \begin{aligned}
-\ln \mathcal{L}(a) 
-&= \ln \prod _ {i=1} ^ n \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \exp \left(- \frac{(y ^ {(i)} - ax ^ {(i)}) ^ 2}{2 \sigma ^ 2} \right)  \quad \leftarrow (2.2.1.15) \\
-&=  \sum _ {i = 1} ^ n \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \exp \left(- \frac{(y ^ {(i)}- ax^{(i)}) ^ 2}{2 \sigma ^ 2} \right)  \right\}  \\
-&= \sum _ {i = 1} ^ n \left[ \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \right\} +\ln \left\{ \exp \left(- \frac{(y ^ {(i)}- ax^{(i)}) ^ 2}{2 \sigma ^ 2} \right)  \right\} \right] \\
-&= \sum _ {i=1} ^ n  \left(- \frac{(y ^ {(i)}- ax^{(i)}) ^ 2}{2 \sigma ^ 2} \right) + \sum _ {i = 1} ^ n \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \right\} \\
-&= - \frac{1}{2 \sigma ^ 2} \sum _ {i=1} ^ n (y ^ {(i)}- ax^{(i)}) ^ 2 + n \cdot \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \right\}
+\ln \mathcal{L}(a|\mathcal{D}) 
+&= \ln \prod _ {i=1} ^ N \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \exp \left(- \frac{(y ^ {(i)} - ax ^ {(i)}) ^ 2}{2 \sigma ^ 2} \right)  \quad \leftarrow (2.2.1.15) \\
+&=  \sum _ {i = 1} ^ N \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \exp \left(- \frac{(y ^ {(i)}- ax^{(i)}) ^ 2}{2 \sigma ^ 2} \right)  \right\}  \\
+&= \sum _ {i = 1} ^ N \left[ \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \right\} +\ln \left\{ \exp \left(- \frac{(y ^ {(i)}- ax^{(i)}) ^ 2}{2 \sigma ^ 2} \right)  \right\} \right] \\
+&= \sum _ {i=1} ^ N  \left(- \frac{(y ^ {(i)}- ax^{(i)}) ^ 2}{2 \sigma ^ 2} \right) + \sum _ {i = 1} ^ N \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \right\} \\
+&= - \frac{1}{2 \sigma ^ 2} \sum _ {i=1} ^ N (y ^ {(i)}- ax^{(i)}) ^ 2 + N \cdot \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \right\}
 \end{aligned}
 $$
 
 したがって
 
 $$
-\ln \mathcal{L}(a) = - \frac{1}{2 \sigma ^ 2} \sum _ {i=1} ^ n (y ^ {(i)}- ax^{(i)}) ^ 2 + n \cdot \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \right\} \tag{2.2.1.20}
+\ln \mathcal{L}(a|\mathcal{D}) = - \frac{1}{2 \sigma ^ 2} \sum _ {i=1} ^ N (y ^ {(i)}- ax^{(i)}) ^ 2 + N \cdot \ln \left\{ \frac{1}{\sqrt{2 \pi \sigma ^ 2}} \right\} \tag{2.2.1.20}
 $$
 
 が求まった。$$a$$に関する最大化問題なので、第1項に関する正数倍、および$$a$$に関係ない第2項は問題の解に影響しないから、
 
 $$
 \begin{aligned}
-\underset{a \in \mathbb{R}}{\operatorname{arg} \operatorname{max}} \,\, \ln \mathcal{L}(a) &= \underset{a \in \mathbb{R}}{\operatorname{arg} \operatorname{max}} \,\, \left\{ -\sum _ {i=1} ^ n (y ^ {(i)}- ax^{(i)}) ^ 2 \right\} \\
-&=\underset{a \in \mathbb{R}}{\operatorname{arg} \operatorname{min}} \,\, \left\{ \sum _ {i=1} ^ n (y ^ {(i)}- ax^{(i)}) ^ 2 \right\}
+\underset{a \in \mathbb{R}}{\operatorname{arg} \operatorname{max}} \,\, \ln \mathcal{L}(a|\mathcal{D}) &= \underset{a \in \mathbb{R}}{\operatorname{arg} \operatorname{max}} \,\, \left\{ -\sum _ {i=1} ^ N (y ^ {(i)}- ax^{(i)}) ^ 2 \right\} \\
+&=\underset{a \in \mathbb{R}}{\operatorname{arg} \operatorname{min}} \,\, \left\{ \sum _ {i=1} ^ N (y ^ {(i)}- ax^{(i)}) ^ 2 \right\}
 \end{aligned} \tag{2.2.1.21}
 $$
 
@@ -218,22 +218,22 @@ $$
 あとは$$a$$に関して整理して
 
 $$
-\sum _ {i=1} ^ n (y ^ {(i)}- ax^{(i)}) ^ 2 = \left( \sum _ {i=1} ^ n \left(x ^ {(i)}\right) ^ 2 \right) a ^ 2 - 2 \left( \sum _ {i=1} ^ n x ^ {(i)} y ^ {(i)}\right) a + \left(y ^ {(i)}\right) ^ 2
+\sum _ {i=1} ^ N (y ^ {(i)}- ax^{(i)}) ^ 2 = \left( \sum _ {i=1} ^ N \left(x ^ {(i)}\right) ^ 2 \right) a ^ 2 - 2 \left( \sum _ {i=1} ^ N x ^ {(i)} y ^ {(i)}\right) a + \left(y ^ {(i)}\right) ^ 2
 $$
 
 であり、また二次関数の最小値を取る点は微分して$$0$$になる点だから、
 
 $$
-\frac{d}{da} \sum _ {i=1} ^ n (y ^ {(i)}- ax^{(i)}) ^ 2 = 2\left( \sum _ {i=1} ^ n \left(x ^ {(i)}\right) ^ 2 \right) a - 2 \left( \sum _ {i=1} ^ n x ^ {(i)} y ^ {(i)}\right) = 0
+\frac{d}{da} \sum _ {i=1} ^ N (y ^ {(i)}- ax^{(i)}) ^ 2 = 2\left( \sum _ {i=1} ^ N \left(x ^ {(i)}\right) ^ 2 \right) a - 2 \left( \sum _ {i=1} ^ N x ^ {(i)} y ^ {(i)}\right) = 0
 $$
 
 より、
 
 $$
-a = \frac{ \sum _ {i=1} ^ n x ^ {(i)} y ^ {(i)}}{\sum _ {i=1} ^ n \left(x ^ {(i)}\right) ^ 2} \tag{2.2.1.22}
+a = \frac{ \sum _ {i=1} ^ N x ^ {(i)} y ^ {(i)}}{\sum _ {i=1} ^ N \left(x ^ {(i)}\right) ^ 2} \tag{2.2.1.22}
 $$
 
-が解となる。データ点をひとつだけ用いるとき、すなわち$$n=1$$のとき
+が解となる。データ点をひとつだけ用いるとき、すなわち$$N=1$$のとき
 
 $$
 a = \frac{x ^ {(1)} y ^ {(1)}}{\left(x ^ {(1)}\right) ^ 2} = \frac{y ^ {(1)}}{x ^ {(1)}} \tag{2.2.1.23}

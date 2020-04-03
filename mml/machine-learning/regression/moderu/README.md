@@ -4,7 +4,7 @@
 
 ニューラルネットについて知りたい人は今回を読んだあとで
 
-{% page-ref page="neural-network.md" %}
+{% page-ref page="../neural-network.md" %}
 
 まで飛ばしてよい。
 
@@ -14,7 +14,7 @@
 
 説明おしまい。
 
-と締めくくってはあまりにも不親切なので、今回はカーネル回帰とガウス過程回帰への接続を行っていく。
+と締めくくってはあまりにも不親切なので、具体例としてガウス基底関数を紹介したあと、確率モデルの観点から正則化を導出する。
 
 線形回帰モデルで扱っていた関数$$\phi \colon \mathbb{R} ^ n \to \mathbb{R} ^ {n+1}$$は
 
@@ -25,13 +25,13 @@ $$
 1 & {\rm if} \,\, i = 0 \\
 x _ i & {\rm otherwise}
 \end{cases}
-\end{aligned} \tag{2.2.2.4}
+\end{aligned} \tag{2.2.3.1}
 $$
 
 であった。線形基底関数モデルでは任意の写像$$\phi \colon \mathcal{X} \to \mathbb{R} ^ n$$を用いてよい。すなわち個々の写像は$$\phi _ i \colon \mathcal{X} \to \mathbb{R}$$で
 
 $$
-\phi (x) = (\phi _ 1 (x), \phi_2(x), \cdots , \phi _n(x)) ^ \mathrm{T}
+\phi (x) = (\phi _ 1 (x), \phi_2(x), \cdots , \phi _n(x)) ^ \mathrm{T} \tag{2.2.3.2}
 $$
 
 である。この$$\phi$$を**基底関数**（basis function）または**特徴量写像**（feature map）という。
@@ -39,51 +39,62 @@ $$
 $$\phi _ i$$の添字が 0 から始まったり 1 から始まったりしているが、切片の項にあたる定数写像$$\phi _ 0 (x) = 1$$はモデルに付け加えたり外したりがよくあるので、添字 0 を割り当てておくと楽である。つまり線形基底関数モデルでも
 
 $$
-\phi (x) = (\phi _ 0 (x), \phi _ 1 (x), \phi_2(x), \cdots , \phi _n(x)) ^ \mathrm{T}
+\phi (x) = (\phi _ 0 (x), \phi _ 1 (x), \phi_2(x), \cdots , \phi _n(x)) ^ \mathrm{T} \tag{2.2.3.3}
 $$
 
 と書けば切片の項があるものとし、
 
 $$
-y = \sum _ {i = 0} ^ n w ^ \mathrm{T} \phi _ i (x) +\varepsilon
+y = \sum _ {i = 0} ^ n w ^ \mathrm{T} \phi _ i (x) +\varepsilon \tag{2.2.3.4}
 $$
 
 と書けば切片ありのモデル、
 
 $$
-y = \sum _ {i = 1} ^ n w ^ \mathrm{T} \phi _ i (x) +\varepsilon
+y = \sum _ {i = 1} ^ n w ^ \mathrm{T} \phi _ i (x) +\varepsilon \tag{2.2.3.5}
 $$
 
 と書けば切片なしのモデルであると約束しておくと数式を書き直す手間が省けてよい。
 
 また特徴量写像$$\phi$$の定義域$$\mathcal{X}$$は任意の集合である。つまり必ずしも数値データである必要はなく、画像、文字列、グラフといったより一般の対象を入力に取ることができる（ここでは紹介しないがカーネル法の書籍などに具体例が載っているだろう）。
 
-では具体的にいくつかの基底関数について見てみよう。
+### ガウス基底関数
 
-### 線形回帰モデル
+入力が実数値であるときに用いることができ、特徴量写像には次の$$\phi \colon \mathbb{R} \to \mathbb{R} ^ {n}$$を用いる（$$n$$は使用者が適当に決めてよい）。
 
-線形回帰モデルは線形基底関数モデルの特殊ケースである。$$(2.2.2.4)$$式の
+$$
+\phi _ j (x) = \exp \left(- \frac{(x - \mu _ j )^2}{2 s ^ 2} \right) \quad (\mu _ j \in \mathbb{R}, \,j \in \{0, 1,2, \ldots, n \}) \tag{2.2.3.7}
+$$
 
-### 多項式回帰モデル
+個々の$$\mu _j $$にどんな値を割振るかも使用者が適当に決める。
 
-### ガウス基底関数モデル
+他によく使うものについては
 
-### Bスプライン基底関数モデル
+{% page-ref page="basis-functions.md" %}
+
+にいくつか書いておいたので、必要ならそちらを参照してほしい。
 
 ## 確率モデルと正則化
 
 線形基底関数モデルの正則化は確率モデルからも導くことができ、重みベクトルに事前分布を設定してMAP推定を行うことと等価である。
 
-$$
-p(y, x, w) = p(y|x,w)p(x)p(w)
-$$
+線形基底関数モデルについて、出力$$y$$、入力$$x$$、重み$$w$$の同時確率分布を以下のように設計する（今回はこう仮定する、という意味であって仮定が異なれば結果は異なる）。
 
 $$
-p(y, w|x)p(x) = p(y|x,w)p(x)p(w) \\
-p(y,w|x)=p(y|x,w)p(w)
+p(y, x, w) = p(y|x,w)p(x)p(w) \tag{2.2.3.8}
 $$
+
+このとき、入力$$x$$が与えられたときの出力$$y$$と重み$$w$$の**同時確率分布**（joint probability distribution）は
+
+$$
+p(y, w | x) = \frac{p(y,x,w)}{p(x)} = p(y|x,w)p(w)  \tag{2.2.3.9}
+$$
+
+である。あとは上式の確率分布に対して、出力$$y$$を観測したあとで重み$$w$$を変数として確率密度を最大化する。
 
 $$
 \underset{a \in \mathbb{R}}{\operatorname{arg} \operatorname{max}} \,\,p (\mathcal{D})
 $$
+
+
 

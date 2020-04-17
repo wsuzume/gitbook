@@ -90,11 +90,25 @@ $$
 p(y, w | x) = \frac{p(y,x,w)}{p(x)} = p(y|x,w)p(w)  \tag{2.2.3.9}
 $$
 
-である。あとは上式の確率分布に対して、出力$$y$$を観測したあとで重み$$w$$を変数として確率密度を最大化する。
+である。あとは上式の確率分布に対して、出力$$y$$を観測したあとで重み$$w$$を変数として確率密度を最大化する。つまり
+
+{% page-ref page="../../introduction/probability-theory.md" %}
+
+で定義した確率密度の表記を用いれば、
 
 $$
-\underset{a \in \mathbb{R}}{\operatorname{arg} \operatorname{max}} \,\,p (\mathcal{D})
+\rho_w(y,w|x) = \rho _ w(y|x,w) \rho _ w(w) \tag{2.2.3.10}
 $$
+
+を最大化する問題
+
+$$
+\underset{w}{\operatorname{arg} \operatorname{max}} \,\, \rho _ w (y,w|x) \tag{2.2.3.11}
+$$
+
+を解くことになる。$$(2.2.3.10)$$式の右辺を慣習的に「事後確率」とか「事後分布」と呼ぶが、実際には確率密度の一種であって、一般には確率でも確率分布でもないことに注意する。
+
+
 
 
 

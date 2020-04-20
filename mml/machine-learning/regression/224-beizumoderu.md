@@ -4,6 +4,13 @@
 
 $$
 \begin{aligned}
+p(w | y, x) &= \frac{p(y|x,w)p(w)}{p(y,x)} \\
+&\propto p(y|x,w)p(w)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
 p(w | \mathcal{D} _ y, \mathcal{D} _ x) &= \frac{p(w)p(\mathcal{D_y | \mathcal{D} _ x, w})}{p(\mathcal{D _  y | \mathcal{D} _ x})} \\
 &\propto p(w)p(\mathcal{D_y | \mathcal{D} _ x, w})
 \end{aligned}

@@ -10,10 +10,11 @@ p(w | y, x) &= \frac{p(y|x,w)p(w)}{p(y,x)} \\
 $$
 
 $$
-\begin{aligned}
-p(w | \mathcal{D} _ y, \mathcal{D} _ x) &= \frac{p(w)p(\mathcal{D_y | \mathcal{D} _ x, w})}{p(\mathcal{D _  y | \mathcal{D} _ x})} \\
-&\propto p(w)p(\mathcal{D_y | \mathcal{D} _ x, w})
-\end{aligned}
+p(w) = \mathcal{N} (w | \mu, \Sigma) = \frac{1}{\sqrt{(2 \pi ) ^ N | \Sigma |}} \exp \left( - \frac{1}{2}(w - \mu) ^ \mathrm{T} \Sigma ^ {-1} (w - \mu) \right)
+$$
+
+$$
+p(y | x, w) = \prod _ {i = 1} ^ N \mathcal{N} (y | w ^ \mathrm{T} \phi(x), \lambda ^ {-1})
 $$
 
 

@@ -17,5 +17,10 @@ $$
 p(y | x, w) = \prod _ {i = 1} ^ N \mathcal{N} (y | w ^ \mathrm{T} \phi(x), \lambda ^ {-1})
 $$
 
-
+$$
+\begin{aligned}
+p(w | y, x) & \propto p(y | x,w)p(w) \\
+&= 
+\end{aligned}
+$$
 

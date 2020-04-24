@@ -3,12 +3,15 @@
 * [数学プログラミング置き場](README.md)
 * [数学記号記法一覧](notation.md)
 
+## 機械学習のための数学 <a id="math-for-ml"></a>
+
+* [確率論](math-for-ml/probability-theory.md)
+
 ## 機械学習・データサイエンス <a id="mml"></a>
 
 * [1. 機械学習・データサイエンス（概要）](mml/abstract.md)
 * [2. 機械学習](mml/machine-learning/README.md)
-  * [2.1. 機械学習をこれから始める人へ](mml/machine-learning/introduction/README.md)
-    * [2.1.1. 確率論](mml/machine-learning/introduction/probability-theory.md)
+  * [2.1. 機械学習をこれから始める人へ](mml/machine-learning/introduction.md)
   * [2.2. 回帰問題](mml/machine-learning/regression/README.md)
     * [2.2.1. 線形回帰の基礎](mml/machine-learning/regression/linear-regression.md)
     * [2.2.2. 線形回帰モデルと正則化](mml/machine-learning/regression/linear-regression-model.md)

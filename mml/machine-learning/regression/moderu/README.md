@@ -84,15 +84,21 @@ $$
 p(y, x, w) = p(y|x,w)p(x)p(w) \tag{2.2.3.8}
 $$
 
-このとき、入力$$x$$が与えられたときの出力$$y$$と重み$$w$$の**同時確率分布**（joint probability distribution）は
+したがって、入力$$x$$が与えられたときの出力$$y$$と重み$$w$$の**同時確率分布**（joint probability distribution）は
 
 $$
 p(y, w | x) = \frac{p(y,x,w)}{p(x)} = p(y|x,w)p(w)  \tag{2.2.3.9}
 $$
 
+である。また、$$w$$が観測されたあとでの各サンプリングは条件付き独立であるとすれば、$$N$$個のデータを持つデータセットの確率分布は
+
+$$
+p(Y, w | X) = p(w) \prod _ {i=1} ^ N p(y ^ {(i)} | x ^{(i)}, w)
+$$
+
 である。あとは上式の確率分布に対して、出力$$y$$を観測したあとで重み$$w$$を変数として確率密度を最大化する。つまり
 
-{% page-ref page="../../introduction/probability-theory.md" %}
+{% page-ref page="../../../../math-for-ml/probability-theory.md" %}
 
 で定義した確率密度の表記を用いれば、
 
@@ -109,8 +115,26 @@ $$
 を解くことになる。$$(2.2.3.10)$$式の右辺を慣習的に「事後確率」とか「事後分布」と呼ぶが、実際には確率密度（または確率質量）であって、一般には確率でも確率分布でもないことに注意する。
 
 $$
-\rho _ w (y, w |x) = \rho _ w(w) \prod _ {i=1} ^ N \rho _ w (y | x, w)
+\rho _ w (y, w |x) = \rho _ w(w) \prod _ {i=1} ^ N \rho _ w (y ^ {(i)} | x ^ {(i)}, w)
 $$
+
+モデルは
+
+$$
+p(w) = \mathcal{N}(w | 0,  \lambda I _ n) = \frac{1}{\sqrt{(2 \pi) ^ n \lambda ^ n}} \exp \left(- \frac{\lambda}{2} w ^ \mathrm{T} w \right)
+$$
+
+$$
+p(y | x,w) = \mathcal{N}(y | w ^ \mathrm{T} \phi(x), \lambda ^ {-1}) = \frac{1}{\sqrt{2\pi \sigma ^ 2}} \exp \left( - \frac{(y - w ^ \mathrm{T} \phi(x)) ^ 2}{2 \sigma ^ 2} \right)
+$$
+
+とすると、
+
+$$
+\ln p(w) \prod _ {i=1} ^ N p(y ^{(i)}|x ^ {(i)}, w) = \lambda w ^ \mathrm{T} w + \sum _ {i=1} ^ N (y - w ^ \mathrm{T} \phi(x)) ^ 2
+$$
+
+が求まる。
 
 
 

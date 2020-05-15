@@ -237,4 +237,5 @@
 ## 雑記帳 <a id="notebook"></a>
 
 * [球面幾何（楕円幾何）](notebook/qiu-mian-ji-he-tuo-yuan-ji-he.md)
+* [双曲幾何](notebook/shuang-qu-ji-he.md)
 
